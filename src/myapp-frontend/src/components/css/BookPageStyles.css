@@ -1,0 +1,99 @@
+#bookingNotice{
+    font-size: 6vh;
+    font-weight: 1000;
+    text-align: center;
+    padding: 5vh 0 0 0;
+    color: rgba(70,90,135,255);
+}
+
+#userCurrentApptContainer{
+    margin: 3vh auto 5vh auto;
+    width: 90vw;
+    height: min-content;
+    min-height: 10vh;
+    border: 3px solid rgba(109,147,230,255);
+    border-radius: 3vh;
+    display: flex;
+    color: white;
+    padding: 2vh;
+    background-color: rgba(70,90,135,255);
+}
+
+#userCurrentApptHeader, #newlyFoundApptHeader{
+    margin: 4vh 0 4vh 5vh;
+    width: min-content;
+    font-weight: 1000;
+    font-size: 8vh;
+    line-height: 0.9;
+}
+
+#userCurrentApptDescription{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: max-content;
+    margin-left: 25vw;
+    font-size: 3vh;
+    font-weight: 600;
+
+}
+
+#userCurrentApptDescription div{
+    margin: 2vh 0 2vh 0;
+}
+
+
+#newlyFoundApptContainer{
+    border: 3px solid rgba(70,90,135,255);
+    height: min-content;
+    min-height: 10vh;
+    margin: 5vh auto 5vh auto;
+    width: 90vw;
+    border-radius: 3vh;
+    display: flex;
+    color: white;
+    padding: 2vh;
+    background-color: rgba(109,147,230,255);
+}
+
+#newlyFoundApptDescription{
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 1.5vh;
+    display: flex;
+    width: 65vw;
+}
+
+#newlyFoundApptDescription div{
+    width: 33%;
+    font-size: 3.5vh;
+}
+
+#buttonBackgroundModule{
+    margin: auto;
+}
+
+#BookPageDisclaimer{
+    width: 92%;
+    margin: 3vh auto 2vh auto;
+}
+
+#BookPageSubmitButton{
+    width: max-content;
+    height: min-content;
+    margin: auto auto auto auto;
+    padding-bottom: 7vh;
+}
+
+#BookPageSubmitButton button{
+    margin-top: 0;
+}
+
+#BookPageBackgroundContainer{
+    background: url('../img/book_page_background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    box-shadow: inset 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}

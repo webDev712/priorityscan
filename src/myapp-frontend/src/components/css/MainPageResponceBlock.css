@@ -1,0 +1,49 @@
+#MainPageResponceBlock{
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 60vw;
+    /* box-shadow:0px 5px 5px -2px rgba(0, 0, 0, 0.2); */
+
+}
+
+
+#availability{
+    font-weight: 1000;
+    font-size: 7vh;
+    color: rgba(70,90,135,255);
+    padding-bottom: 2vh;
+    padding-top: 5vh;
+}
+
+#description{
+    color: rgba(70,90,135,255);
+    font-size: 4vh;
+    font-weight: 600;
+    line-height: 0.95;
+}
+
+#description #appointmentPlace, #description #appointmentDate, #description #appointmentType, #description #appointmentDateSoonerCount{
+    color: rgba(109,147,230,255);
+    text-transform: uppercase;    
+    font-weight: 1000;
+}
+
+#clickBelowText{
+    font-weight: 1000;
+    font-size: 3vh;
+    color: rgba(70,90,135,255);
+    padding-top: 5vh;
+}
+
+#bookSnswerBackground{
+    height: 35vh;
+    width: 98.9vw;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 75%;
+    background-image: url('../img/book_answer_background.jpeg');
+}

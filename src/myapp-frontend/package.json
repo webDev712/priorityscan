@@ -1,0 +1,63 @@
+{
+  "name": "myapp-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "async_hooks": "^1.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "crypto": "^1.0.1",
+    "crypto-browserify": "^3.12.0",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "install": "^0.13.0",
+    "net": "^1.0.2",
+    "path": "^0.12.7",
+    "path-browserify": "^1.0.1",
+    "querystring": "^0.2.1",
+    "querystring-es3": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "styled-components": "^6.0.7",
+    "url": "^0.11.3",
+    "web-vitals": "^2.1.4",
+    "zlib": "^1.0.5"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost/api/send-data:80",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+}

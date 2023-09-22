@@ -1,0 +1,9 @@
+.IntakeFormInput{
+    font-size: 5vh;
+    font-size: 4.4vh;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    color: white;
+    outline: none;
+}
