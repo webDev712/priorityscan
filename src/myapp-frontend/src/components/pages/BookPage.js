@@ -8,6 +8,7 @@ import Button from "../Button";
 import '../css/BookPageStyles.css';
 
 function BookPage(){
+  document.title = "Priority Scan";
   const [message, setMessage] = useState("");
   useEffect(() => {
     fetch('/api')

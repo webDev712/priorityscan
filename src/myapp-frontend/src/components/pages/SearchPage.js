@@ -6,6 +6,7 @@ import IntakeForm from "../IntakeForm";
 import { useEffect, useState } from 'react';
 
 function SearchPage(){
+  document.title = "Priority Scan";
   const [message, setMessage] = useState("");
   useEffect(() => {
     fetch('/api')

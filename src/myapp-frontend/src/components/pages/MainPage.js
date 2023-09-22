@@ -8,6 +8,7 @@ import MainPageResponceBlock from "../MainPageResponceBlock";
 
 
 function MainPage(){
+  document.title = "Priority Scan";
   const [isFormVisible, setFormVisibility] = useState(true);
   const [responseData, setResponseData] = useState('');     
   return (

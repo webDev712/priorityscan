@@ -8,7 +8,7 @@ function IntakeForm(props) {
     const setResponseData = props.setResponseData;
       function submitIntakeFormFunction() {
         const response = fetch(
-            'http://localhost:80/api/send-data', {
+            'http://16.171.113.89:80/api/send-data', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import '../css/ProfilePage.css'
 
 function ProfilePage(){
+  document.title = "Priority Scan";
   const [message, setMessage] = useState("");
   useEffect(() => {
     fetch('/api')
