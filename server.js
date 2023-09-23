@@ -28,6 +28,12 @@ app.post('/api/send-data', (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    console.log('GET REQUEST');
+    res.status(200).json({message: "It's fine!"});
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
