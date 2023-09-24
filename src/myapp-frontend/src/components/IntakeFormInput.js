@@ -1,22 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../components/css/IntakeFormInput.css';
 
 function IntakeFormInput(props){
     const inputStyle = {
         width: props.width || "14vw"
     }
+
     const [inputValue, setValue] = useState('');
-    var checkInputForNumbers = (event) => {
-        setValue(event.target.value);
-    }
-    if (props.onlyNums){
-        checkInputForNumbers = (event) => {
-            const newValue = event.target.value;
+    
+    useEffect(() => {
+        if (props.default){
+            setValue(props.default);
+        }
+    }, [props.default])
+
+    const checkInputForNumbers = (event) => {
+        const newValue = event.target.value;
+        if (props.onlyNums){
             if ((event.keyCode !== 189 && /^[0123456789]+$/.test(newValue)) || newValue === '') {
                 setValue(newValue);
             }
-    }
-
+        } else {
+            setValue(event.target.value);
+        }
     }
     return (
         <input 
@@ -28,8 +34,7 @@ function IntakeFormInput(props){
         style={inputStyle}
         className='IntakeFormInput'
         onChange={checkInputForNumbers}
-        >
-        </input>
+        />
     )
 }
 

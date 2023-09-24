@@ -46,4 +46,18 @@
 
 button{
     cursor: pointer;
-}  
+}
+
+.IntakeFormSelect{
+    padding: 0 1.7em 0 1.7em;
+    margin: 0 0.7em 0 0.7em;
+}
+
+.IntakeFormSelect option, .IntakeFormSelect option:checked{
+    font-size: 4.4vh;
+    background-color: rgba(70,90,135,255);
+    border: none;
+    color: white;
+    outline: none;
+    text-align: left;
+}

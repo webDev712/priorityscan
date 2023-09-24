@@ -19,7 +19,7 @@ app.post('/api/send-data', (req, res) => {
             'appointmentType': req.body.appointmentType,// TODO: change it
             'appointmentDateSoonerCount': '10',
             'appointmentDate': '09/09/2023',
-            'maxDistance': req.body.maxDistance
+            'maxDistance': req.body.maxDistance || '25'
         }
         res.status(200).json(responceData);
     }
