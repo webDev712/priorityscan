@@ -8,3 +8,7 @@
     outline: none;
     text-align: center;
 }
+
+.IntakeFormInput::placeholder{
+    color: rgba(255, 255, 255, 0.411);
+}

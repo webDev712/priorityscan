@@ -34,6 +34,7 @@ function IntakeFormInput(props){
         style={inputStyle}
         className='IntakeFormInput'
         onChange={checkInputForNumbers}
+        placeholder={props.placeholder || ''}
         />
     )
 }

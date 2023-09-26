@@ -35,8 +35,8 @@ function IntakeForm(props) {
         <div id="IntakeFormMainContainer">
             <div id="IntakeFormSmallContainer">
                 <div id="IntakeFormHeader">Intake Form</div>
-                <div id="IntakeFormDescription">I live in <IntakeFormInput name='livingPlace' /> and have a 
-                <select id="appointmentType" className="IntakeFormInput IntakeFormSelect">
+                <div id="IntakeFormDescription">I live in <IntakeFormInput name='livingPlace' placeholder='123 Maple Street Toronto, ON M5V 3K1' width='20vw' /> and have a 
+                <select id="appointmentType" className="IntakeFormInput IntakeFormSelect" style={{width: '5vw', minWidth: 'max-content'}}>
                     <option default></option>
 
                     <option value={'ct'}>CT</option>
